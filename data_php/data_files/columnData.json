@@ -1,0 +1,19 @@
+{
+  "cols": [
+        {"id":"","label":"Word","pattern":"","type":"string"},
+        {"id":"","label":"Visual Cues","pattern":"","type":"number"}
+      ],
+  "rows": [
+        {"c":[{"v":"yellow","f":null},{"v":4,"f":null}]},
+        {"c":[{"v":"submarine","f":null},{"v":6,"f":null}]},
+        {"c":[{"v":"bananas","f":null},{"v":3,"f":null}]},
+        {"c":[{"v":"ugly","f":null},{"v":3,"f":null}]},
+        {"c":[{"v":"gigantic","f":null},{"v":12,"f":null}]},
+		{"c":[{"v":"game","f":null},{"v":1,"f":null}]},
+        {"c":[{"v":"play","f":null},{"v":2,"f":null}]},
+        {"c":[{"v":"love","f":null},{"v":1,"f":null}]},
+        {"c":[{"v":"duckling","f":null},{"v":5,"f":null}]},
+        {"c":[{"v":"elephant","f":null},{"v":10,"f":null}]}
+				
+      ]
+}

@@ -1,0 +1,16 @@
+{
+  "cols": [
+        {"id":"","label":"Word Set","pattern":"","type":"string"},
+        {"id":"","label":"Seconds","pattern":"","type":"number"}
+      ],
+  "rows": [
+        {"c":[{"v":"Let's play a game","f":null},{"v":11.5,"f":null}]},
+        {"c":[{"v":"Yellow submarine","f":null},{"v":12.5,"f":null}]},
+        {"c":[{"v":"I love bananas","f":null},{"v":14.0,"f":null}]},
+        {"c":[{"v":"Ugly Duckling","f":null},{"v":9.3,"f":null}]},
+        {"c":[{"v":"Gigantic elephant","f":null},{"v":15.8,"f":null}]},
+	
+		
+		
+      ]
+}

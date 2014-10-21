@@ -1,0 +1,80 @@
+<!-- 
+Written by JOHN RAMOS 
+ET-26 
+Javascript that lets you record the coordinates of you mouse clicks over a canvas and prints them to file upon user request.
+Originally written as a testing tool for eye tracking. Mouse clicks mimics position of eye gaze on screen. Coordinates collected are used for data visualisation.
+-->
+
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<!-- CSS for clickable canvas -->
+<style type="text/css">
+.clickable {
+    border: 1px solid #333;
+    background: #eee;
+    height: 800px; width: 1200px;
+    margin: 25px;
+    position: absolute;
+}
+.display {
+    display: block;
+    height: 16px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    top: 50%; margin-top: -8px;
+}
+
+
+</style>
+
+
+
+
+<div class='clickable'>
+ <span class='display'></span>
+</div>
+
+<!-- Records each mouse pointer click coordinates in time and puts them into an array. 
+Array is printed to a file. 
+Also, user can view values and the time upon each pointer click. -->
+
+<script type="text/javascript">
+$('.clickable').bind('click', function (ev) {
+    var $div = $(ev.target);
+    var $display = $div.find('.display');
+    var time = new Date().getTime();
+    var offset = $div.offset();
+    var x = ev.clientX - offset.left;
+    var y = ev.clientY - offset.top;
+    var coor = ["0","0", "0"];
+    
+    $display.text('x: ' + x + ', y: ' + y + ', time: ' + time);
+    
+    coor.push(x, y, time);
+
+    
+});
+
+var csvContent = "data:text/csv;charset=utf-8,";
+$("#pressme").click(function () {
+    coor.forEach(function (infoArray, index) {
+        dataString = infoArray.join(",");
+        csvContent += dataString + "\n";
+    });
+
+    var encodedUri = encodeURI(csvContent);
+    window.open(encodedUri);
+});
+
+
+</script>
+
+<form>
+    <input id="pressme" type="button" value="Write to file">
+</form>
+
+

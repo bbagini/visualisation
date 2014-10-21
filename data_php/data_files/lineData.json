@@ -1,0 +1,24 @@
+{
+  "cols": [
+        {"id":"","label":"Target","pattern":"","type":"string"},
+        {"id":"","label":"Seconds","pattern":"","type":"number"}
+      ],
+  "rows": [
+        {"c":[{"v":"Target 1","f":null},{"v":8.3,"f":null}]},
+        {"c":[{"v":"Target 2","f":null},{"v":9.5,"f":null}]},
+        {"c":[{"v":"Target 3","f":null},{"v":11.0,"f":null}]},
+        {"c":[{"v":"Target 4","f":null},{"v":12.5,"f":null}]},
+        {"c":[{"v":"Target 5","f":null},{"v":10,"f":null}]},
+		{"c":[{"v":"Target 6","f":null},{"v":7.8,"f":null}]},
+		{"c":[{"v":"Target 7","f":null},{"v":9.2,"f":null}]},
+		{"c":[{"v":"Target 8","f":null},{"v":4.5,"f":null}]},
+		{"c":[{"v":"Target 9","f":null},{"v":3.0,"f":null}]},
+		{"c":[{"v":"Target 10","f":null},{"v":9.0,"f":null}]},
+		{"c":[{"v":"Target 11","f":null},{"v":12.2,"f":null}]},
+		{"c":[{"v":"Target 12","f":null},{"v":10.1,"f":null}]},
+		{"c":[{"v":"Target 13","f":null},{"v":13.2,"f":null}]},
+		{"c":[{"v":"Target 14","f":null},{"v":8.5,"f":null}]},
+		{"c":[{"v":"Target 15","f":null},{"v":6.3,"f":null}]},
+		
+      ]
+}
